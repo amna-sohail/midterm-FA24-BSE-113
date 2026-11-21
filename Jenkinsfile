@@ -35,7 +35,7 @@ pipeline {
             emailext(
                 subject: "MIDTERM FA24-BSE-113 - Build #${env.BUILD_NUMBER} ${currentBuild.currentResult}",
                 body: "Student Reg No: FA24-BSE-113\nStatus: ${currentBuild.currentResult}\nCommit: ${env.GIT_COMMIT}\nBuild: ${env.BUILD_URL}",
-                to: 'amnsohail543@gmail.com',
+                to: 'qasimalik@gmail.com, amnsohail543@gmail.com',
                 from: 'amnsohail543@gmail.com'
             )
         }
